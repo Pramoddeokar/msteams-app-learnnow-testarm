@@ -1,0 +1,69 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "1.0.0",
+  "id": "9124716f-932a-4ed4-bc7e-49066c65f93c",
+  "packageName": "com.microsoft.teams.apptemplates.base",
+  "developer": {
+    "name": "Contoso",
+    "websiteUrl": "<website url>",
+    "privacyUrl": "<privacy url>",
+    "termsOfUseUrl": "<terms of use url>"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Course Companion",
+    "full": "Course Companion"
+  },
+  "description": {
+    "short": "Course Companion lets educators organize learning resources and modules.",
+    "full": "Course Companion lets educators organize learning resources and modules in a central place that offers a visual search-and-browse experience for students. The app makes it easy to save, share, and collaborate around learning content."
+  },
+  "composeExtensions": [
+    {
+      "botId": "<<botId>>",
+      "canUpdateConfiguration": true,
+      "commands": [
+        {
+          "id": "learnnow",
+          "type": "action",
+          "title": "Learn-now",
+          "description": "Learn-now",
+          "initialRun": true,
+          "fetchTask": true,
+          "context": [
+            "compose",
+            "message"
+          ]
+        }
+      ]
+    }
+  ],
+  "staticTabs": [
+    {
+      "entityId": "<<Entity id>>",
+      "name": "Discover",
+      "contentUrl": "<<websiteurl>>/discover",
+      "websiteUrl": "<<websiteurl>>/discover",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "accentColor": "#FFFFFF",
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "configurableTabs": [
+	{
+		"configurationUrl": "<<websiteurl>>/configurable-tab",
+		"canUpdateConfiguration": true,
+		"scopes": [ "team" ]
+	}
+],
+  "validDomains": []
+}
