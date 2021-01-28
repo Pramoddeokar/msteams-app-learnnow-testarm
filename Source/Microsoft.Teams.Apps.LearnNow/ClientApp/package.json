@@ -10,7 +10,7 @@
     "@microsoft/applicationinsights-web": "^2.5.9",
     "@microsoft/teams-js": "1.6.0",
     "@uifabric/icons": "7.3.47",
-    "axios": "0.19.2",
+    "axios": "^0.21.1",
     "i18next": "19.4.5",
     "i18next-xhr-backend": "^3.2.2",
     "moment": "^2.29.1",
